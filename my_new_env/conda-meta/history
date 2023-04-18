@@ -1,0 +1,15 @@
+==> 2023-04-18 10:49:31 <==
+# cmd: C:\Program Files (x86)\Anaconda3\Scripts\conda-script.py create -p my_new_env python==3.8 -y
+# conda version: 4.12.0
++defaults/noarch::wheel-0.37.1-pyhd3eb1b0_0
++defaults/win-32::ca-certificates-2022.4.26-h9f7ea03_0
++defaults/win-32::certifi-2022.6.15-py38h9f7ea03_0
++defaults/win-32::openssl-1.1.1o-hc431981_0
++defaults/win-32::pip-21.2.4-py38h9f7ea03_0
++defaults/win-32::python-3.8.0-hff0d562_2
++defaults/win-32::setuptools-61.2.0-py38h9f7ea03_0
++defaults/win-32::sqlite-3.38.3-hc431981_0
++defaults/win-32::vc-14.2-h21ff451_1
++defaults/win-32::vs2015_runtime-14.27.29016-h5e58377_2
++defaults/win-32::wincertstore-0.2-py38h9f7ea03_2
+# update specs: ['python==3.8']
