@@ -1,0 +1,6 @@
+[ 2023-04-26 07:35:41,135 ] 147 numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[ 2023-04-26 07:35:41,136 ] 159 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2023-04-26 07:35:42,569 ] 27 root - INFO - enter the data ingestion method from the source-(can be obtained from either API SOURCE, DATABASE SOURCE OR MONGODB SOURCE ) 
+[ 2023-04-26 07:35:42,781 ] 31 root - INFO - Extracted data from source into the dataframe
+[ 2023-04-26 07:35:42,804 ] 37 root - INFO - Train_test split initiatION
+[ 2023-04-26 07:35:42,830 ] 44 root - INFO - INGESTION COMPLETED
