@@ -2,6 +2,11 @@ import os
 import sys
 from src.logger import logging
 from src.exception import CustomException
+
+from src.components.data_transformation import DataTxnConfig
+from src.components.data_transformation import DataTxn
+
+
 import pandas as pd
 import numpy as np
 import sklearn
@@ -51,7 +56,9 @@ class Data_Ingestion():
 
 if (__name__=="__main__"):
     obj1=Data_Ingestion()
-    obj1.Initiate_data_ingestion()
+    train_data,test_data=obj1.Initiate_data_ingestion()
+    data_transformation=DataTxn()
+    train_arr,test_arr=data_transformation.initiate_data_txn(train_data,test_data)
 
         
 
