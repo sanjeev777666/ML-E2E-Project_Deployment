@@ -49,7 +49,9 @@ class ModelTrainer:
                 # "CatBoosting Regressor": CatBoostRegressor(verbose=False),
                 "AdaBoost Regressor": AdaBoostRegressor(),
             }
-
+            """1. INITALLY COMMENT THE BELOW CODES PERTAINING TO PARAMS (SO AS TO RUN WITHOUT HYPERPARAMETER TUNING COPULED WITH utils_without_hyperparameter.py FILE )
+               2. THEN GO FORWARD WITH INCLUSION OF PARAMTERS & PLAY WITH TUNING  CUPLED IWTH THE utils.py FILES 
+            """
             params={
                 "Decision Tree": {
                     'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
