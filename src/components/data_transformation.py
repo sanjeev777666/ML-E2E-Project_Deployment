@@ -13,9 +13,12 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
 from dataclasses import dataclass
 
+@dataclass
 class DataTxnConfig():
     """CREATING A NEW STRING VARIABLE THAT ENCOMPASSES THE PATH & FOLDER THE RESPECTIVE(TRAIN,TEST,RAW)DATA THAT MUST BE PLACED INTO(HERE INTO THE ARTIFACT FOLDER)."""
     preprocessor_obj_file_path= os.path.join("Artifact","preprocessor.pkl")
+
+
 class DataTxn():
     def __init__(self):
         self.Txn_config=DataTxnConfig()
@@ -116,7 +119,7 @@ class DataTxn():
             return(
                 train_arr,
                 test_arr,
-                # self.Txn_config.preprocessor_obj_file_path
+                self.Txn_config.preprocessor_obj_file_path
             )
                
         except Exception as e:

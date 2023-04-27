@@ -6,6 +6,9 @@ from src.exception import CustomException
 from src.components.data_transformation import DataTxnConfig
 from src.components.data_transformation import DataTxn
 
+from src.components.Training_model import ModelTrainer
+from src.components.Training_model import ModelTrainerConfig
+
 
 import pandas as pd
 import numpy as np
@@ -58,7 +61,11 @@ if (__name__=="__main__"):
     obj1=Data_Ingestion()
     train_data,test_data=obj1.Initiate_data_ingestion()
     data_transformation=DataTxn()
-    train_arr,test_arr=data_transformation.initiate_data_txn(train_data,test_data)
+    train_arr,test_arr,preprocessor_path=data_transformation.initiate_data_txn(train_data,test_data)
+
+    modelTrainerobj=ModelTrainer()
+    print(modelTrainerobj.initiate_Model_Trainer(train_arr,test_arr))
+
 
         
 
